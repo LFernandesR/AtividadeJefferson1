@@ -5,13 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto</title>
 </head>
+<style>
+    a {
+        background-color: gray;
+        border-radius: 3%;
+        text-decoration: none;
+        color: black;
+        border: solid, black;
+    }
+
+
+
+
+
+
+
+</style>
 <body>
-    <h1>Index!!</h1> 
-    <li>
-        <a class="ali" href="{% url 'alimentos'%}">Alimentos</a>
-        <a  class="ads" href="{% url 'ads'%}">Ads</a>
-        <a class="info" href="{% url 'informatica'%}">Informatica</a>
-        <a  class="ads" href="{% url 'apicultura'%}">Apicultura</a>
-    </li>
+    <main>
+        <h1>Index!!</h1> 
+        <nav class="navegacao">
+            <li>
+                <a  class="ali" href="{% url 'alimentos'%}">Alimentos</a>
+                <a  class="ads" href="{% url 'ads'%}">Ads</a>
+                <a  class="info" href="{% url 'informatica'%}">Informatica</a>
+                <a  class="ads" href="{% url 'apicultura'%}">Apicultura</a>
+            </li>
+        </nav>
+            
+    </main>
+    
 </body>
 </html>
